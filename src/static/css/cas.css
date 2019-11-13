@@ -58,7 +58,7 @@ html {
   width: device-width;
 }
 
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, header, hgroup, main, nav, section {
   display: block;
 }
 
@@ -70,7 +70,10 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-image: url(https://chaofanhb.github.io/assets/cas/images/bg-01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 [tabindex="-1"]:focus {
@@ -558,6 +561,10 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.login .container{
+  max-width: 500px!important;
+  padding-top: 15px!important
 }
 
 @media (min-width: 576px) {
@@ -2578,6 +2585,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .btn:not(:disabled):not(.disabled) {
   cursor: pointer;
+  opacity: 0
 }
 
 .btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active {
@@ -9962,6 +9970,7 @@ a.text-btn-submit:hover, a.text-btn-submit:focus {
 }
 
 footer {
+  display: none!important;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -11197,29 +11206,29 @@ fieldset[disabled] .btn-yahoo.focus {
  * Add in our own custom social colors.
  */
 .btn-submit {
-  background-color: #28a745;
+  /*background-color: #28a745;*/
   color: #fff;
-  background-color: #28a745;
-  border-color: rgba(0, 0, 0, 0.2);
+  /*background-color: #28a745;
+  border-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-submit:focus, .btn-submit.focus {
   color: #fff;
-  background-color: #1e7e34;
-  border-color: rgba(0, 0, 0, 0.2);
+  b/*ackground-color: #1e7e34;
+  border-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-submit:hover {
   color: #fff;
-  background-color: #1e7e34;
-  border-color: rgba(0, 0, 0, 0.2);
+  /*background-color: #1e7e34;
+  border-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-submit:active, .btn-submit.active,
 .open > .btn-submit.dropdown-toggle {
   color: #fff;
-  background-color: #1e7e34;
-  border-color: rgba(0, 0, 0, 0.2);
+  /*background-color: #1e7e34;
+  border-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-submit:active:hover, .btn-submit:active:focus, .btn-submit:active.focus, .btn-submit.active:hover, .btn-submit.active:focus, .btn-submit.active.focus,
@@ -11227,8 +11236,8 @@ fieldset[disabled] .btn-yahoo.focus {
 .open > .btn-submit.dropdown-toggle:focus,
 .open > .btn-submit.dropdown-toggle.focus {
   color: #fff;
-  background-color: #176128;
-  border-color: rgba(0, 0, 0, 0.2);
+  /*background-color: #176128;
+  border-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-submit:active, .btn-submit.active,
@@ -11240,13 +11249,13 @@ fieldset[disabled] .btn-yahoo.focus {
 fieldset[disabled] .btn-submit:hover,
 fieldset[disabled] .btn-submit:focus,
 fieldset[disabled] .btn-submit.focus {
-  background-color: #28a745;
-  border-color: rgba(0, 0, 0, 0.2);
+  /*background-color: #28a745;
+  border-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .btn-submit .badge {
   color: #28a745;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 .btn-cas {

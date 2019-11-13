@@ -8,6 +8,12 @@
     <title th:text="#{cas.login.pagetitle}">CAS Acceptable Use Policy View</title>
     <link href="../../static/css/cas.css" rel="stylesheet" th:remove="tag" />
 
+
+    <link rel="stylesheet" type="text/css" href="https://chaofanhb.github.io/assets/cas/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://chaofanhb.github.io/assets/cas/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://chaofanhb.github.io/assets/cas/fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="https://chaofanhb.github.io/assets/cas/css/util.css">
+    <link rel="stylesheet" type="text/css" href="https://chaofanhb.github.io/assets/cas/css/main.css">
 </head>
 
 <body class="login">
@@ -17,7 +23,7 @@
             <div th:replace="fragments/loginform :: loginform"><a href="fragments/loginform.html">Login Form goes
                 here</a></div>
         </div>
-        <div id="notices" class="col-md mt-3 mt-md-0">
+        <!-- <div id="notices" class="col-md mt-3 mt-md-0">
             <div th:replace="fragments/insecure :: insecure"><a href="fragments/insecure.html">insecure alert goes
                 here</a></div>
             <div th:replace="fragments/defaultauthn :: staticAuthentication">
@@ -33,7 +39,7 @@
             <div th:replace="fragments/cas-resources-list :: cas-resource-list">
                 <a href="fragments/cas-resources-list.html">cas-resource</a> list fragment
             </div>
-        </div>
+        </div> -->
     </div>
 </main>
 </body>

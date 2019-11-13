@@ -52,7 +52,7 @@ html {
 
 @-ms-viewport {
   width: device-width; }
-article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, dialog, figcaption, figure, header, hgroup, main, nav, section {
   display: block; }
 
 body {
@@ -6841,6 +6841,7 @@ a.text-btn-submit:hover, a.text-btn-submit:focus {
   margin-right: 7px; }
 
 footer {
+  display: none;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -7875,6 +7876,11 @@ body {
 
 body > .container {
   padding: 65px 15px 0; }
+  
+.login .container{
+	max-width:500px!important;
+	padding-top:15px!important
+}
 
 a {
   color: #257bb2; }

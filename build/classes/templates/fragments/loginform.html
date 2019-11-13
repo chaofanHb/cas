@@ -15,11 +15,10 @@
             <!-- Login form template begins here -->
             <div th:fragment="loginform" class="card">
                 <div class="card-header text-center">
-                    <h2 th:text="#{cas.login.pagetitle}">Login</h2>
-                    <span class="fa-stack fa-2x hidden-xs">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
+                    <div style="width: 100%; text-align: center;">
+                    <img class="content-logo" src="data:image/png;base64,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" alt="logo">
+                      <h1 class="content-title">登录</h1>
+                    </div>
                 </div>
                 <div class="card-body">
                     <form method="post" id="fm1" th:object="${credential}" action="login">
@@ -27,10 +26,10 @@
                             <span th:each="err : ${#fields.errors('*')}" th:utext="${err}">Example error</span>
                         </div>
 
-                        <h3 th:utext="#{screen.welcome.instructions}">Enter your Username and Password</h3>
+                        <!-- <h3 th:utext="#{screen.welcome.instructions}">Enter your Username and Password</h3> -->
 
                         <section class="form-group">
-                            <label for="username" th:utext="#{screen.welcome.label.netid}">Username</label>
+                            <!-- <label for="username" th:utext="#{screen.welcome.label.netid}">Username</label> -->
 
                             <div th:if="${openIdLocalId}">
                                 <strong>
@@ -41,31 +40,38 @@
                                        name="username"
                                        th:value="${openIdLocalId}"/>
                             </div>
-                            <div th:unless="${openIdLocalId}">
-                                <input class="form-control required"
+                            <div th:unless="${openIdLocalId}" class="wrap-input100 validate-input m-b-23" data-validate="请输入用户名">
+                                <span class="label-input100">用户名</span>
+                                <input class="input100"
                                        id="username"
                                        size="25"
                                        tabindex="1"
                                        type="text"
                                        th:disabled="${guaEnabled}"
                                        th:field="*{username}"
+                                       placeholder="请输入用户名"
                                        th:accesskey="#{screen.welcome.label.netid.accesskey}"
                                        autocomplete="off"/>
+                                <span class="focus-input100" data-symbol="&#xf206;"></span>
                             </div>
+
                         </section>
 
                         <section class="form-group">
-                            <label for="password" th:utext="#{screen.welcome.label.password}">Password</label>
+                            <!-- <label for="password" th:utext="#{screen.welcome.label.password}">Password</label> -->
 
-                            <div>
-                                <input class="form-control required"
+                            <div class="wrap-input100 validate-input" data-validate="请输入密码">
+                                <span class="label-input100">密码</span>
+                                <input class="input100"
                                        type="password"
                                        id="password"
                                        size="25"
                                        tabindex="2"
                                        th:accesskey="#{screen.welcome.label.password.accesskey}"
+                                       placeholder="请输入密码"
                                        th:field="*{password}"
                                        autocomplete="off"/>
+                                <span class="focus-input100" data-symbol="&#xf190;"></span>
                                 <span id="capslock-on" style="display:none;">
                                 <p>
                                     <i class="fa fa-exclamation-circle"></i>
@@ -104,7 +110,7 @@
                               </span>
                           </span>
                         </p>
-                        <input class="btn btn-block btn-submit"
+                        <!-- <input class="btn btn-block btn-submit"
                                th:unless="${recaptchaSiteKey != null AND recaptchaInvisible != null AND recaptchaSiteKey != null AND recaptchaInvisible}"
                                name="submit"
                                accesskey="l"
@@ -112,7 +118,24 @@
                                tabindex="6"
                                type="submit"
                                value="Login3"
-                        />
+                        /> -->
+
+                        <div class="container-login100-form-btn">
+                          <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <input class="login100-form-btn btn btn-block btn-submit"
+                               th:unless="${recaptchaSiteKey != null AND recaptchaInvisible != null AND recaptchaSiteKey != null AND recaptchaInvisible}"
+                               name="submit"
+                               accesskey="l"
+                               th:value="#{screen.welcome.button.login}"
+                               tabindex="6"
+                               type="submit"
+                               value="Login3"
+                            />
+                          </div>
+                        </div>
+                        <p style="font-size: 16px; text-align: center;position: relative;top: -38px;color: white;z-index: 100;pointer-events: none;">登录</p>
+
                         <button class="btn btn-block btn-submit g-recaptcha"
                                 th:if="${recaptchaSiteKey != null AND recaptchaInvisible != null AND recaptchaSiteKey != null AND recaptchaInvisible}"
                                 th:attr="data-sitekey=${recaptchaSiteKey}, data-badge=${recaptchaPosition}"
@@ -122,6 +145,7 @@
                                 th:text="#{screen.welcome.button.login}"
                                 tabindex="6"
                         />
+
                     </form>
 
                     <form th:if="${passwordManagementEnabled}" method="post" id="passwordManagementForm">
